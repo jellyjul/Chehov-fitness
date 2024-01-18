@@ -1,0 +1,31 @@
+.feedback {
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+
+    &__box {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    &__title {
+        color: white;
+        font-size: 56px;
+    }
+    &__card {
+        width: 400px;
+        height: 400px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 30px;
+        color: #000;
+    }
+}

@@ -1,0 +1,21 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/vars.scss";
+
+.movie {
+    &__line {
+        background-color: $main-green;
+        display: flex;
+        justify-content: space-around;
+        height: 100px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 50px;
+    }
+    &__subtitle {
+        font-size: 25px;
+    }
+}
