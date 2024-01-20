@@ -2,6 +2,20 @@
 @import "../../styles/vars.scss";
 
 .movie {
+    &__video {
+        background-color: black;
+        color: white;
+        padding: 3% 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__frame {
+        width: 1200px;
+        height: 400px;
+        display: flex;
+    }
     &__line {
         background-color: $main-green;
         display: flex;

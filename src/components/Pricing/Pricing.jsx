@@ -5,7 +5,7 @@ const Pricing = () => {
   return (
     <div className={styles.pricing}>
         <div className={styles.pricing__box}>
-            <div className={styles.pricing__title}>Pricing</div>
+            <div className={styles.pricing__title}>абонементы</div>
             <div className={styles.pricing__subtitle}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sint animi enim doloremque voluptate beatae ipsum voluptatum minima quidem eveniet voluptates, repudiandae, nostrum quam, a eaque distinctio. Porro, delectus quis!</div>
             <div className={styles.pricing__tarrifs}>
                 <div className={styles.pricing__tarif}>

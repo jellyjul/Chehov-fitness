@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/vars.scss";
 .gallery {
     padding: 3% 5%;
     display: flex;
@@ -7,11 +9,10 @@
     background-color: black;
 
     &__title {
-        font-size: 50px;
-        color: white;
+        @include h1;
     }
     &__subtitle {
-        color: white;
+        @include subtitle;
     }
     &__box {
         display: flex;
@@ -21,7 +22,6 @@
         img {
             margin: 2%;
             border-radius: 40px;
-            box-shadow: 14px 12px 21px -5px #f5f0f0;
         }
     }
 }

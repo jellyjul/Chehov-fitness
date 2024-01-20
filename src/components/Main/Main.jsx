@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './Main.module.scss'
-import classNames from 'classnames'
+
 import phone from '../../assets/images/telephone.png'
 import email from '../../assets/images/email.png'
 import location from '../../assets/images/location.png'
 import cross from '../../assets/images/cross.png'
+import logo from '../../assets/images/yoga-pose.png'
 
 const Main = () => {
   return (
@@ -13,14 +14,16 @@ const Main = () => {
             <div className={styles.header__container}>
               <ul className={styles.header__menu}>
                   <li className = {styles.header__item}>О нас</li>
-                  <li className = {styles.header__item}>Программы</li>
                   <li className = {styles.header__item}>Галерея</li>
-                  <li>
-                  {/* <img src={}></img> */}
-                  </li>
-                  <li className = {styles.header__item}>Цены</li>
+                  <li className = {styles.header__item}>Абонементы</li>
+                  {/* <li>
+                  <img src={logo} alt="logo" />
+                  </li> */}
                   <li className = {styles.header__item}>Команда</li>
                   <li className = {styles.header__item}>Контакты</li>
+                  <li className = {styles.header__item}>
+                    <button className = {styles.header__button}> Заказать звонок</button>
+                  </li>
               </ul>
         </div>
           </div>

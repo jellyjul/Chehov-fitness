@@ -1,7 +1,6 @@
 import './App.css';
 import About from './components/About/About.jsx';
 import Main from './components/Main/Main.jsx';
-import Programs from './components/Programs/Programs.jsx';
 import Movie from './components/Movie/Movie.jsx';
 import Gallery from './components/Gallery/Gallery.jsx';
 import Pricing from './components/Pricing/Pricing.jsx';
@@ -16,7 +15,6 @@ function App() {
     <div className="App">
     <Main/>
     <About/>
-    <Programs/>
     <Movie/>
     <Gallery/>
     <Pricing/>

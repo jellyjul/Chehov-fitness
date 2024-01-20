@@ -16,12 +16,10 @@
         height: 630px;
     }
     &__title {
+        @include h1;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-transform: uppercase;
-        color: white;
-        font-size: 55px;
     }
     &__subtitle {
         display: flex;
@@ -64,6 +62,7 @@
         list-style: none;
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
     }
     &__item {
         color: white;
@@ -71,5 +70,8 @@
     }
     &__item:hover {
         color: $main-green;
+    }
+    &__button {
+        @include button(white, 10px 20px, none);
     }
 }

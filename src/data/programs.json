@@ -1,31 +1,31 @@
 [{
     "photo":"https://jamieisrunning.com/wp-content/uploads/2019/07/BFR.jpg",
-    "title":"Lorem",
+    "title":"Силовые",
     "description":"Lorem"
     },
     {
         "photo":"https://jamieisrunning.com/wp-content/uploads/2019/07/BFR.jpg",
-        "title":"Lorem",
+        "title":"Кардио",
         "description":"Lorem"
         },
         {
             "photo":"https://jamieisrunning.com/wp-content/uploads/2019/07/BFR.jpg",
-            "title":"Lorem",
+            "title":"Functional",
             "description":"Lorem"
             },
             {
                 "photo":"https://jamieisrunning.com/wp-content/uploads/2019/07/BFR.jpg",
-                "title":"Lorem",
+                "title":"Кроссфит",
                 "description":"Lorem"
                 },
                 {
                     "photo":"https://jamieisrunning.com/wp-content/uploads/2019/07/BFR.jpg",
-                    "title":"Lorem",
+                    "title":"Танцы",
                     "description":"Lorem"
                     },
                     {
                         "photo":"https://jamieisrunning.com/wp-content/uploads/2019/07/BFR.jpg",
-                        "title":"Lorem",
+                        "title":"Body and mind",
                         "description":"Lorem"
                         }
 ]

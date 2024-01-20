@@ -1,3 +1,6 @@
+@import "../../styles/vars.scss";
+@import "../../styles/mixins.scss";
+
 .contact {
     padding: 3% 5%;
     display: flex;
@@ -7,24 +10,52 @@
     background-color: black;
 
     &__box {
+        padding: 7%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: #fff;
+        background-color: black;
+        color: white;
+        border: 5px solid $main-green;
+        border-radius: 40px;
+        gap: 10px;
     }
     &__details {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
     }
     &__title {
-        font-size: 56px;
+        @include h1;
+        display: flex;
+        justify-content: center;
     }
     &__form {
         display: flex;
         flex-direction: column;
     }
-    &__main {
+    &__contacts {
         display: flex;
+        flex-direction: column;
+    }
+    &__name {
+        position: relative;
+        margin-bottom: 25px;
+
+        input {
+            border: 0;
+            border-bottom: 1px solid #555;
+            background: transparent;
+            width: 100%;
+            padding: 8px 0 5px 0;
+            font-size: 16px;
+            color: #fff;
+        }
+        input:focus {
+            border: none;
+            outline: none;
+        }
+    }
+    &__btn {
+        @include button(white, 10px 20px, 180px);
     }
 }

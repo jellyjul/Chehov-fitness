@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/vars.scss";
 .team {
     padding: 3% 5%;
     display: flex;
@@ -13,7 +15,13 @@
         justify-content: center;
         align-items: center;
     }
-    &__slider {
-        display: flex;
+    &__title {
+        @include h1;
+    }
+    &__subtitle {
+        @include subtitle;
+    }
+    &__carousel {
+        width: 1000px;
     }
 }

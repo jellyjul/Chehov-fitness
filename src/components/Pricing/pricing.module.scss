@@ -1,3 +1,4 @@
+@import "../../styles/mixins.scss";
 @import "../../styles/vars.scss";
 .pricing {
     padding: 3% 5%;
@@ -7,6 +8,14 @@
     align-items: center;
     background-color: black;
 
+    &__title {
+        @include h1;
+        display: flex;
+        justify-content: center;
+    }
+    &__subtitle {
+        @include subtitle;
+    }
     &__tarrifs {
         display: flex;
         justify-content: center;

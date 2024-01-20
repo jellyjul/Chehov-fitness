@@ -1,10 +1,27 @@
-@mixin button($width, $padding) {
+@mixin button($color, $padding, $width) {
     width: $width;
     padding: $padding;
-    text-decoration: none;
-    border: none;
-    border-radius: 15px;
+    align-self: start;
+    color: $color;
+    background-color: $main-green;
+    outline: none;
+    border: 0;
+    text-transform: uppercase;
+    border-radius: 20px;
+    cursor: pointer;
     &:hover {
         background-color: $button-light;
     }
+}
+
+@mixin h1 {
+    font-size: 44px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+@mixin subtitle {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 2%;
 }
