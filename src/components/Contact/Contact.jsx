@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 import styles from './contact.module.scss'
 import stylesMain from '../Main/Main.module.scss'
 import phone from '../../assets/images/telephone.png'
 import email from '../../assets/images/email.png'
 import location from '../../assets/images/location.png'
 
+
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+  
+
+    emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_YOUR_TEMPLATE_ID , form.current, 'Wws7WQOIzc2QAXzkg')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <div className={styles.contact}>
         <div className={styles.contact__box}>
@@ -27,18 +43,24 @@ const Contact = () => {
             </div>
             </div>
             <div className={styles.contact__form}>
-                <div className={styles.contact__main}>
-                <div className={styles.contact__name}>
-                    <input type="text" placeholder='Имя'  name="" id="" required/>
-                </div>
-                <div className={styles.contact__name}>
-                <input type="text" placeholder='Фамилия'  name="" id="" required/>
-                </div>
-                </div>
-                <div className={styles.contact__name}>
-                    <input type="number" placeholder='Телефон'   name="" id="" required />
-                </div>
-            <button className={styles.contact__btn} type="submit">Жду звонка</button>
+              <div className={styles.contact__main}>
+                <form ref={form} onSubmit={sendEmail}>
+                    <div className={styles.contact__name} id ='contact-name' >
+                          <input type="text" placeholder='Имя'  name="user_name" id="" required/>
+                    </div>
+                    <div className={styles.contact__name} id ='contact-surname' >
+                      <input type="text" placeholder='Фамилия'  name = "user_surname" id="" required/>
+                    </div>
+                    <div className={styles.contact__name} id ='contact-number' >
+                      <input type="number" placeholder='Телефон'   name="user_phone" id="form__number" required />
+                    </div>
+                    <div className={styles.contact__name} id ='telegram' >
+                      <input type="text" placeholder='Telegram'  name="user_telegram" />
+                    </div>
+                    <button className={styles.contact__btn} type="submit" id = 'contact__btn'>Жду звонка</button>
+                </form>
+              </div>
+              
             </div>
         </div>
     </div>

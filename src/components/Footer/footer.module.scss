@@ -2,19 +2,30 @@
     padding: 3% 5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     background-color: black;
     color: white;
 
     &__box {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
         gap: 50px;
     }
     &__details {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    &__contacts {
+        display: flex;
+    }
+    &__socialItem {
+        margin: 8px;
+    }
+    &__copyright {
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
     }
 }
